@@ -2,7 +2,7 @@ import Utils from "../utils/utils"
 
 const utils = new Utils
 
-export default class LoginPage{
+export default class LoginPage {
     url          = 'http://127.0.0.1:5500/view/login.html'
     campoEmail   = '#user'
     campoSenha   = 'input[type=password]'
@@ -26,6 +26,9 @@ export default class LoginPage{
 
     clicarBtnLogout(){
         utils.click(this.btnLogout)
+    }
+    clicarBtnLogoutSeTiver(){
+        utils.clickSeTiver(this.btnLogout)
     }
 
     preencherCampoEmail(){
